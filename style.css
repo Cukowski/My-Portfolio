@@ -20,6 +20,16 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+.section-heading {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: 0.3rem solid #333;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
 /* End of Reset and Command Styles */
 
 /* Section 1 */
@@ -36,7 +46,7 @@ html{
     font-size: 6rem;
     font-weight: 700;
     color: #fff;
-    background-color: #e41c6f; /* make it blue */
+    background-color: #7C81AD;
     padding: 0 3rem;
     margin-bottom: 5rem;
     text-transform: uppercase;
@@ -51,7 +61,7 @@ html{
     height: 25rem;
     object-fit: cover;
     border-radius: 50%;
-    border: 0.7rem dotted #e41c6f; /* make it blue */
+    border: 0.5rem solid #7C81AD;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem;
     opacity: 0.9;
@@ -60,7 +70,7 @@ html{
 .person-name {
     font-size: 2rem;
     color: #fff;
-    background-color: #e41c6f; /* make it blue */
+    background-color: #7C81AD; 
     margin: 5rem 0;
     padding: 0.5rem 3rem;
     letter-spacing: 0.3rem;
@@ -83,7 +93,7 @@ html{
 .navbar {
     width: 100%;
     height: 4rem;
-    background-color: #e41c6f; /* make it blue */
+    background-color: #7C81AD; 
     box-shadow: 0.2rem 0.2rem 0.rem #555;
 }
 
@@ -130,16 +140,6 @@ html{
   align-items: center;
 }
 
-.section-2-heading {
-    font-size: 5rem;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    margin-bottom: 15rem;
-    border-bottom: 0.3rem solid #333;
-    text-shadow: 0.2rem 0.2rem 0.5rem #555;
-}
-
 .progress-bars-wrapper {
   margin-bottom: 10rem;
 }
@@ -170,7 +170,7 @@ html{
 .progress-percent {
   width: 90%;
   height: 100%;
-  background-color: #e41c6f;
+  background-color: #7C81AD;
   border-radius: 0.3rem;
 }
 
@@ -208,3 +208,90 @@ html{
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 /* End of Section 2 */
+
+/* Section 3 */
+.section-3 {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  background-color: #eef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-wrapper {
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: #fff;
+  box-shadow: 0.3rem 0.3rem 0.5rem #777;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.project:hover {
+  box-shadow: 1rem 1rem 1rem #777;
+}
+
+.project-text {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: -10rem;
+  z-index: 10;   /* not sure what this is for */
+  transition: top 0.3s;
+}
+
+.project:hover .project-text {
+  top: 5rem;
+  transition: top 0.3s 0.3s;
+}
+
+.project-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.project-technologies {
+  font-size: 1.8rem;
+  color: #7C81AD;
+}
+
+.project-img {
+  width: 40rem;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project-img {
+  opacity: 0.2;
+}
+
+.project-link {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.1rem;
+  border: 0.3rem solid #7C81AD;
+  padding: 0 1rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5rem;
+  transition: bottom 0.3s;
+}
+
+.project:hover .project-link {
+  bottom: 5rem;
+  transition: bottom 0.3s 0.3s;
+}
+/* End of Section 3 */
