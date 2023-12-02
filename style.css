@@ -398,6 +398,15 @@ html{
 /* End of Section 5 */
 
 /* Responsive */
+@media (max-width: 1300px) {
+  .section-1 {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(images/background1300.png) center no-repeat;
+  }
+}
 @media (max-width: 1200px) {
   .services {
     height: auto;
