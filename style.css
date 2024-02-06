@@ -157,6 +157,14 @@ html{
   align-items: center;
 }
 
+.intro{
+  color: #333;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
 .progress-bars-wrapper {
   margin-bottom: 10rem;
 }
