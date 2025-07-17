@@ -316,11 +316,37 @@ html{
   transition: bottom 0.3s;
 }
 
+
 .project:hover .project-link {
   bottom: 5rem;
   transition: bottom 0.3s 0.3s;
 }
 /* End of Section 3 */
+
+/* Section 4 - Latest Videos */
+.section-videos {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos-wrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.video-frame {
+  width: 40rem;
+  aspect-ratio: 16 / 9;
+  border: none;
+  box-shadow: 0.3rem 0.3rem 0.5rem #777;
+}
 
 /* Section 4 */
 .section-4 {
@@ -470,6 +496,10 @@ html{
   }
 
   .project-img {
+    width: 100%;
+  }
+
+  .video-frame {
     width: 100%;
   }
 
