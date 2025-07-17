@@ -3,7 +3,10 @@ const navbarOffsetTop = navbar.offsetTop;
 const sections = document.querySelectorAll("section");
 const navbarLinks = document.querySelectorAll(".navbar-link");
 const progress = document.querySelector(".progress-bars-wrapper");
-const progressBarPercents = [90, 80, 70, 60, 50, 40, 30];
+// Percentages shown next to each progress bar in the markup. The
+// values here must match the numbers inside the <span> elements in
+// index.html so that the bars animate to the correct width.
+const progressBarPercents = [97, 80, 70, 60, 50, 40];
 
 window.addEventListener("scroll", () => {
   mainFn();
