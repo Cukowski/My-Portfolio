@@ -14,7 +14,7 @@ h1, h2, h3 { line-height: 1.2; }
 .person-name { font-size: 1.6rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .hero-summary { max-width: 40rem; margin-bottom: 1.75rem; color: var(--muted); }
 .section-1-btn, .contact-links a { display: inline-block; padding: .7rem 1.2rem; background: var(--accent); color: white; border-radius: .35rem; text-decoration: none; font-weight: 600; }
-.navbar { position: sticky; top: 0; z-index: 10; gap: clamp(1rem, 4vw, 3rem); min-height: 4rem; padding: .75rem 1rem; background: var(--accent); }
+.navbar { flex-wrap: wrap; position: sticky; top: 0; z-index: 10; gap: clamp(1rem, 4vw, 3rem); min-height: 4rem; padding: .75rem 1rem; background: var(--accent); }
 .navbar-link { color: white; font-weight: 500; text-decoration: none; }
 .navbar-link.change, .navbar-link:hover { text-decoration: underline; }
 .section-2, .section-3, .section-4 { padding: 5rem max(1.25rem, calc((100vw - 1120px)/2)); }
